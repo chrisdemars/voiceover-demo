@@ -1,10 +1,31 @@
-/* Reset default browser styles */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
 }
 
 body {
@@ -28,16 +49,13 @@ h1 {
 }
 
 form {
-  /* width: 10%; */
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* max-width: 800px; */
 }
 
 label {
-  /* display: block; */
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -45,37 +63,49 @@ label {
 select {
   width: 50%;
 }
+
 input[type="text"],
 input[type="checkbox"],
 input[type="radio"],
 textarea {
-  /* width: 10%; */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
   margin-bottom: 10px;
 }
 
-input[type="submit"] {
+/* input[type="submit"] {
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-}
+} */
 
 input[type="submit"]:hover {
   background-color: #555;
 }
 
 button {
-  width: 100%;
-  background-color: yellow;
+  margin: 0 auto;
+  width: 50%;
+  background-color: rgb(9, 249, 77);
   color: #000000;
   padding: 10px 20px;
   border-radius: 3px;
   cursor: pointer;
   font-weight: bold;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-instructions {
+  display: flex;
+  flex-direction: column;}
+
+.special-instructions__textarea {
+  resize: vertical;
 }
