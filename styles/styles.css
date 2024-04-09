@@ -61,7 +61,14 @@ form:focus-within {
 }
 
 input:focus-within {
-  border: 3px solid #000000;
+  border: 10px solid #000000;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid crimson;
+  border-radius: 3px;
 }
 
 label {
@@ -100,6 +107,11 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+button:focus-visible {
+  border: 5px dashed crimson;
+  border-radius: 3px;
 }
 
 .special-instructions {
