@@ -22,7 +22,7 @@
           <input type="text" id="address" name="address" required />
         </div>
 
-        <div>
+        <div class="size">
           <label for="pizza-size">Pizza Size:</label>
           <select id="pizza-size" name="pizza-size" required>
             <option value="">Select a size</option>
@@ -32,35 +32,49 @@
           </select>
         </div>
 
-        <div>
+        <div class="toppings">
           <p>Toppings:</p>
-          <input
-            type="checkbox"
-            id="pepperoni"
-            name="topping"
-            value="pepperoni" />
-          <label for="pepperoni">Pepperoni</label><br />
-          <input
-            type="checkbox"
-            id="mushrooms"
-            name="topping"
-            value="mushrooms" />
-          <label for="mushrooms">Mushrooms</label><br />
-          <input type="checkbox" id="olives" name="topping" value="olives" />
-          <label for="olives">Olives</label><br />
+          <div>
+            <input
+              type="checkbox"
+              id="pepperoni"
+              name="topping"
+              value="pepperoni" />
+            <label for="pepperoni">Pepperoni</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="mushrooms"
+              name="topping"
+              value="mushrooms" />
+            <label for="mushrooms">Mushrooms</label>
+          </div>
+          <div>
+            <input type="checkbox" id="olives" name="topping" value="olives" />
+            <label for="olives">Olives</label>
+          </div>
         </div>
 
-        <div>
+        <div class="sauce">
           <p>Sauce:</p>
-          <input
-            type="radio"
-            id="tomato"
-            name="sauce"
-            value="tomato"
-            required />
-          <label for="tomato">Tomato</label><br />
-          <input type="radio" id="bbq" name="sauce" value="bbq" required />
-          <label for="bbq">BBQ</label><br />
+          <div>
+            <input
+              type="radio"
+              id="tomato"
+              name="sauce"
+              value="tomato"
+              required />
+            <label for="tomato">Tomato</label>
+          </div>
+          <div>
+            <input type="radio" id="bbq" name="sauce" value="bbq" required />
+            <label for="bbq">BBQ</label>
+          </div>
+          <div>
+            <input type="radio" id="alfredo" name="sauce" value="alfredo" required />
+            <label for="alfredo">Alfredo</label>
+          </div>
         </div>
 
         <div class="special-instructions"">
@@ -68,7 +82,7 @@
           <textarea class="special-instructions__textarea" id="instructions" name="instructions"></textarea>
         </div>
 
-        <button type="submit">Place Order</button>
+        <button>Place Order</button>
       </form>
     </div>
   </body>
