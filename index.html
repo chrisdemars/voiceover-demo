@@ -14,17 +14,17 @@
       <form>
         <div>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name" required aria-required />
         </div>
 
         <div>
           <label for="address">Address:</label>
-          <input type="text" id="address" name="address" required />
+          <input type="text" id="address" name="address" required aria-required />
         </div>
 
         <div class="size">
           <label for="pizza-size">Pizza Size:</label>
-          <select id="pizza-size" name="pizza-size" required>
+          <select id="pizza-size" name="pizza-size" required aria-required>
             <option value="">Select a size</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
@@ -68,7 +68,7 @@
             <label for="tomato">Tomato</label>
           </div>
           <div>
-            <input type="radio" id="bbq" name="sauce" value="bbq" required />
+            <input type="radio" id="bbq" name="sauce" value="bbq" required aria-required/>
             <label for="bbq">BBQ</label>
           </div>
           <div>
@@ -85,6 +85,6 @@
         <button id="myButton" type="submit">Place Order</button>
       </form>
     </section>
-    <script src="./js/app.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
   </body>
 </html>
